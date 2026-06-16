@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CarRental_SSAS</Database>
+    <Server>DESKTOP-U5P151O\SQLDEV_EVAL</Server>
+    <ConnectionString>Data Source=DESKTOP-U5P151O\SQLDEV_EVAL;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>pKSE1LbNz8efg2XdPEWAB29Lk+k=5/2/2026 8:57:48 PM4/30/2026 1:22:13 AM</TimeStamp>
+        <ID>
+          <String>DS_CarRental_DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>xV8m2rD2swDkGIQ3aBVWeEZe70g=4/30/2026 1:51:38 AM4/30/2026 1:24:19 AM</TimeStamp>
+        <ID>
+          <String>DSV_CarRental_DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rtQ7PbZ/FKcTRNhNBz6jflqk6ek=4/30/2026 9:37:16 AM4/30/2026 2:34:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iHofSHxw5+/dkgDMRsZslSXJSNg=4/30/2026 9:38:47 AM4/30/2026 2:34:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Vehicle</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>U174esD9cfWGkmAlSvF94qAbD9A=4/30/2026 2:47:56 AM4/30/2026 2:34:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rnT3j+95q73rSETBs6mbd6Bns/Y=4/30/2026 2:55:01 AM4/30/2026 2:34:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Insurance</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jOzDJWqMLwIToUXaQXETKj8FX+o=4/30/2026 2:53:22 AM4/30/2026 2:34:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Branch</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+fCP6m2lkZ1/CSaSVOtAk4z4ads=4/30/2026 3:04:16 AM4/30/2026 2:34:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Staff</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DaTa9Hbd9UctUxq/gQxYLvXAUSE=4/30/2026 3:39:16 AM4/30/2026 3:16:38 AM</TimeStamp>
+        <ID>
+          <String>DimEndDate</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>3mTCNGU8DrukzSY6s4sPZsQUyL4=4/30/2026 9:38:47 AM4/30/2026 2:34:08 AMqYGq0H5dlLm2/bOn2Yv50cjPzZI=4/30/2026 2:34:08 AM4/30/2026 2:34:08 AM</TimeStamp>
+        <ID>
+          <String>Cube_CarRental</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>tiM5it0A9TgaMy1egZ1M8xukHXw=4/30/2026 1:15:59 AM4/30/2026 1:15:58 AM</TimeStamp>
+      <ID>
+        <String>CarRental_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2026-05-02T15:31:52.346667Z</LastDeployed>
+</DeploymentSnapshot>
