@@ -4,8 +4,18 @@
 
 This repository contains the complete implementation of a **Data Warehousing and Business Intelligence** solution for a **Car Rental Management System**, developed as part of the IT3021 module at Sri Lanka Institute of Information Technology (SLIIT).
 
+| Detail | Information |
+|--------|-------------|
+| **Student** | L. G. Piyumi Bhagya Rajasekara |
+| **Module** | IT3021 - Data Warehousing and Business Intelligence |
+| **Academic Year** | Year 3, Semester 1 - 2026 |
+| **Institution** | Sri Lanka Institute of Information Technology (SLIIT) |
+
+---
+
 ## 📁 Repository Structure
 
+```
 car-rental-dwbi/
 │
 ├── 📂 DataWarehouse/
@@ -46,6 +56,9 @@ car-rental-dwbi/
 │   └── Assignment2_Report.pdf               # Assignment 2 Documentation
 │
 └── README.md
+```
+
+---
 
 ## 🏗️ Assignment 1 — Data Warehouse
 
@@ -55,23 +68,26 @@ A **Car Rental Management System** dataset tracking vehicle rentals, customers, 
 ### ⭐ Data Warehouse Schema — Star Schema
 
 **Fact Table:**
-- FactRental — Rental transactions with measures: Total Amount LKR, Daily Rate LKR, Rental Duration Days, Fuel Charge LKR, Insurance Fee LKR
+- `FactRental` — Rental transactions with measures: Total Amount LKR, Daily Rate LKR, Rental Duration Days, Fuel Charge LKR, Insurance Fee LKR
 
 **Dimension Tables:**
-
- DimVehicle | Vehicle details — Car Brand, Model, Transmission 
- DimCustomer | Customer information — Name, License Type 
- DimDate | Date hierarchy — Year → Quarter → Month → Day
- DimBranch | Branch details — City, Location 
- DimStaff | Staff information — Role, Branch 
- DimInsurance | Insurance types and coverage 
+| Dimension | Description |
+|-----------|-------------|
+| DimVehicle | Vehicle details — Car Brand, Model, Transmission |
+| DimCustomer | Customer information — Name, License Type |
+| DimDate | Date hierarchy — Year → Quarter → Month → Day |
+| DimBranch | Branch details — City, Location |
+| DimStaff | Staff information — Role, Branch |
+| DimInsurance | Insurance types and coverage |
 
 ### 🔄 ETL Pipeline (SSIS)
 
- CarRental_Load_Staging.dtsx | Extract data from CSV, Excel, Text sources into staging 
- CarRental_Load_DW.dtsx | Transform and load from staging to data warehouse 
- CarRental_Update_AccumFact.dtsx | Update accumulating fact table with completion times 
- Data_Profiling.dtsx | Data quality profiling 
+| Package | Description |
+|---------|-------------|
+| `CarRental_Load_Staging.dtsx` | Extract data from CSV, Excel, Text sources into staging |
+| `CarRental_Load_DW.dtsx` | Transform and load from staging to data warehouse |
+| `CarRental_Update_AccumFact.dtsx` | Update accumulating fact table with completion times |
+| `Data_Profiling.dtsx` | Data quality profiling |
 
 ### 📂 Data Sources (Multiple Types)
 - **CSV files** — Rental transactions, Vehicle data, Customer information, Branch and Staff records
@@ -93,31 +109,35 @@ A **Car Rental Management System** dataset tracking vehicle rentals, customers, 
 
 ### 📈 OLAP Operations (Excel)
 
-**Pivot** | Swap Car Brand ↔ Year axes to change data perspective 
-**Roll-Up** | Aggregate quarterly data to yearly summary 
-**Drill-Down** | Expand from Car Brand level to Car Model level 
-**Slice** | Filter data by single dimension — Year 2023 
-**Dice** | Filter by multiple dimensions — Year 2023 + Toyota 
+| Operation | Description |
+|-----------|-------------|
+| **Pivot** | Swap Car Brand ↔ Year axes to change data perspective |
+| **Roll-Up** | Aggregate quarterly data to yearly summary |
+| **Drill-Down** | Expand from Car Brand level to Car Model level |
+| **Slice** | Filter data by single dimension — Year 2023 |
+| **Dice** | Filter by multiple dimensions — Year 2023 + Toyota |
 
 ### 📊 Power BI Reports
 
- **Report 1** | Matrix visual — Car Brand × Year with Total Amount and Rental Count 
- **Report 2** | Cascading slicers — City → Branch filter with multiple charts 
- **Report 3** | Drill-down — Date hierarchy Year → Quarter → Month 
- **Report 4** | Drill-through — Summary page to Vehicle detail page 
+| Report | Description |
+|--------|-------------|
+| **Report 1** | Matrix visual — Car Brand × Year with Total Amount and Rental Count |
+| **Report 2** | Cascading slicers — City → Branch filter with multiple charts |
+| **Report 3** | Drill-down — Date hierarchy Year → Quarter → Month |
+| **Report 4** | Drill-through — Summary page to Vehicle detail page |
 
-🔗 **Published to Power BI Service:** [View Reports](https://app.powerbi.com/groups/me/list?experience=power-bi)
+🔗 **Published to Power BI Service:** (accessible with authorized Microsoft account).
 
 ---
 
 ## 🛠️ Technologies Used
 
-SQL Server
-SSIS
-SSAS
-Power BI
-Excel
-Visual Studio
+- Microsoft SQL Server
+- SQL Server Integration Services (SSIS)
+- SQL Server Analysis Services (SSAS)
+- Microsoft Power BI
+- Microsoft Excel
+- Visual Studio 2022
 
 ---
 
